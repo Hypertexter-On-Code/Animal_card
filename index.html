@@ -13,7 +13,9 @@
             /*Styles the entire page background*/
             background-color: #f0f0f0; /* light gray background color*/
             font-family: Arial, sans-serif; /* sets the font for the webpage*/
+            min-height: 100vh;
             margin: 0;
+            padding: 20px;
         }
 
         div {
@@ -33,9 +35,12 @@
         }
 
         img {
-            width: 55%;
-            height: auto;
+            width: 100%;
+            max-height: 250px;
+            object-fit: contain;
+            /*border: 5px solid black;*/
             border-radius: 10px;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -52,10 +57,13 @@
         <img src="/images/red_panda.png" alt="Red Panda">
 
         <!--Scientific name italicized (h4)-->
-        <h4><em>Ailurus fulgens</em></h4>
+        <h4>Ailurus fulgens</h4>
 
         <!--Description of the animal (p)-->
         <p>The Red Panda is a small mammal native to the eastern Himalayas and southwestern China. Despite its name, it is not closely related to the giant panda. Red pandas are excellent climbers and spend most of their time in trees.</p>
+
+        <!--View documentary-->
+        <button><a href="" target="_blank">View Documentary</a></button>
 
         <!--Learn more (button) which is a link (a) to a wikipedia article about the animal-->
         <button><a href="https://en.wikipedia.org/wiki/Red_panda" target="_blank">Learn more</a></button>
