@@ -1,0 +1,94 @@
+    /* This is the style block for internal css styling*/
+    body {
+    /*Styles the entire page background*/
+    background-color: #f0f0f0; /* light gray background color*/
+    font-family: Arial, sans-serif; /* sets the font for the webpage*/
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    }
+
+    div {
+    background-color: white;
+    width: 300px;
+    min-height: 500px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    }
+
+    h2 {
+    color: #d84315;
+    margin-top: 0;
+    font-size: 28px;
+    }
+
+    img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    /*border: 5px solid black;*/
+    border-radius: 10px;
+    margin: 10px 0;
+    }
+
+    h4 {
+    color: #555;
+    font-style: italic;
+    margin: 10px 0;
+    font-size: 14px;
+    }
+
+    p {
+    color: black;
+    font-size: 14;
+    line-height: 1.6;
+    text-align: left;
+    margin: 15px 0;
+    }
+
+    button, a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;;
+    font-size: 14px;
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    }
+
+    a {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    }
+
+    a:hover {
+    background-color: #45a049;
+    }
+
+    button {
+    background-color: #2196f3;
+    color: white;
+    cursor: no-drop;
+    }
+
+    button:hover {
+    background-color: #0b7dda;
+    }
+
+    button:disabled {
+    background-color: yellow;
+    color: #666;
+    cursor: not-allowed;
+    }
+
+    button:disabled:hover {
+    background-color: #ccc;
+    }
+
