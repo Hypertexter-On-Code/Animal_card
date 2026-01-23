@@ -16,12 +16,13 @@
             min-height: 100vh;
             margin: 0;
             padding: 20px;
+            text-align: center;
         }
 
         div {
             background-color: white;
             width: 300px;
-            height: 500px;
+            min-height: 500px;
             border-radius: 15px;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -42,6 +43,65 @@
             border-radius: 10px;
             margin: 10px 0;
         }
+
+        h4 {
+            color: #555;
+            font-style: italic;
+            margin: 10px 0;
+            font-size: 14px;
+        }
+
+        p {
+            color: black;
+            font-size: 14;
+            line-height: 1.6;
+            text-align: left;
+            margin: 15px 0;
+        }
+
+        button, a {
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            text-decoration: none;;
+            font-size: 14px;
+            display: block;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        a {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        a:hover {
+            background-color: #45a049;
+        }
+
+        button {
+            background-color: #2196f3;
+            color: white;
+            cursor: no-drop;
+        }
+
+        button:hover {
+            background-color: #0b7dda;
+        }
+
+        button:disabled {
+            background-color: yellow;
+            color: #666;
+            cursor: not-allowed;
+        }
+
+        button:disabled:hover {
+            background-color: #ccc;
+        }
+
     </style>
 </head>
 <body>
@@ -62,18 +122,19 @@
         <!--Description of the animal (p)-->
         <p>The Red Panda is a small mammal native to the eastern Himalayas and southwestern China. Despite its name, it is not closely related to the giant panda. Red pandas are excellent climbers and spend most of their time in trees.</p>
 
+         <!--Learn more (button) which is a link (a) to a wikipedia article about the animal-->
+        <a href="https://en.wikipedia.org/wiki/Red_panda" target="_blank">Learn more</a>
         <!--View documentary-->
-        <button><a href="" target="_blank">View Documentary</a></button>
+        <a href="https://youtu.be/jtOesnWNrjI?si=C4CPMpuzCIw6HznW" target="_blank">View Documentary</a>
 
-        <!--Learn more (button) which is a link (a) to a wikipedia article about the animal-->
-        <button><a href="https://en.wikipedia.org/wiki/Red_panda" target="_blank">Learn more</a></button>
+
 
         <!--Animal gallery (button) which is a link (a)-->
         <button><span title="Coming soon, under construction!">Gallery</span></button>
 
 
         <!--Animal sound (button) which is disabled and with a tool tip-->
-        <button><span title="Coming soon, under construction!">Animal sound</span></button>
+        <button disabled><span title="Coming soon, under construction!">Animal sound</span></button>
     </div>
     <!--Footer-->
     <footer></footer>
